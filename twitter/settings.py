@@ -31,9 +31,7 @@ SECRET_KEY = 'django-insecure-2@#g_vq8t%um0qi=f(x#!!)@qk!&en=^)33)ll3^q@o6o4a#72
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "127.0.0.1",
-    "localhost",
-    "4a90a0b2183c.ngrok.io"
+    "*"
 ]
 
 
@@ -149,4 +147,4 @@ REST_FRAMEWORK = {
 }
 
 if django_heroku:
-    django_heroku.settings(localls())
+    django_heroku.settings(locals())
